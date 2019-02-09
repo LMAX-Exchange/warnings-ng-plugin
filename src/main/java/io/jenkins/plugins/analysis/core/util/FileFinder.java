@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.tools.ant.BuildException;
+import org.apache.tools.ant.DirectoryScanner;
 import org.apache.tools.ant.Project;
 import org.apache.tools.ant.types.FileSet;
 import org.apache.tools.ant.types.selectors.TypeSelector;
@@ -90,6 +91,7 @@ public class FileFinder extends MasterToSlaveFileCallable<String[]> {
                 fileSet.setExcludes(excludesPattern);
             }
 
+            fileSet.setFollowSymlinks(false);
             return fileSet.getDirectoryScanner(antProject).getIncludedFiles();
         }
         catch (BuildException ignored) {

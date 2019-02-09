@@ -11,10 +11,10 @@
   <groupId>io.jenkins.plugins</groupId>
   <artifactId>warnings-ng</artifactId>
   <packaging>hpi</packaging>
-  <name>Warnings Next Generation Plugin</name>
-  <version>2.2.2-SNAPSHOT</version>
+  <name>Warnings Next Generation Plugin (LMAX)</name>
+  <version>2.2.2-01</version>
   <url>https://wiki.jenkins.io/x/1YTeCQ</url>
-  <description>Jenkins Warnings Next Generation plugin collects compiler warnings or issues reported by static
+  <description>Jenkins Warnings Next Generation (LMAX) plugin collects compiler warnings or issues reported by static
     analysis tools and visualizes the results. It has built-in support for numerous static analysis tools
     (including several compilers), see the list of supported report formats.
   </description>
